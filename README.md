@@ -1,4 +1,9 @@
-<img src="kamailio-logo.png" width=272 alt="Kamailio">
+<pre><code>  _  __                              _   _   _         
+ | |/ /   __ _   _ __ ___     __ _  (_) | | (_)   ___  
+ | ' /   / _` | | '_ ` _ \   / _` | | | | | | |  / _ \ 
+ | . \  | (_| | | | | | | | | (_| | | | | | | | | (_) |
+ |_|\_\  \__,_| |_| |_| |_|  \__,_| |_| |_| |_|  \___/ 
+                                                       </code></pre>
 
 # Kamailio Document [5.3.x] | <a href="https://kamailio.org/docs/modules/5.3.x/">Documentation</a>
 
