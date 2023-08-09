@@ -165,6 +165,30 @@ modparam("cfgutils", "initial_gflags", 15)
 modparam("cfgutils", "lock_set_size", 4)
 #!endif</code></pre>
 
-**Extra:**
+# [MultiDomain](https://kamailio.org/docs/modules/5.3.x/modules/domain.html)
+**Como implementar MultiDomain:**
+
+*Defined values*
+<pre><code>#!ifdef WITH_MULTIDOMAIN
+#!define MULTIDOMAIN 1
+#!else
+#!define MULTIDOMAIN 0
+#!endif</code></pre>
+
+*Modules section*
+<pre><code>#!ifdef WITH_MULTIDOMAIN
+loadmodule "domain.so"
+#!endif</code></pre>
+
+*Setting module-specific parameters*
+<pre><code>#!ifdef WITH_MULTIDOMAIN
+modparam("domain", "db_url", DBURL)
+/* register callback to match myself condition with domains list */
+modparam("domain", "register_myself", 1)
+#!endif</code></pre>
+
+
+# Extra documentation:
 
 - [Modules parameters](https://www.kamailio.org/wiki/alphaindexes/5.3.x/modparameters?s[]=postgres)
+- [Official Wiki](https://www.kamailio.org/wiki/)
