@@ -187,6 +187,23 @@ modparam("domain", "db_url", DBURL)
 modparam("domain", "register_myself", 1)
 #!endif</code></pre>
 
+# [Dispatcher](https://kamailio.org/docs/modules/5.3.x/modules/dispatcher.html)
+**Como implementar Dispatcher**
+
+*Modules section*
+<pre><code>loadmodule "dispatcher.so"</code></pre>
+
+*Setting module-specific parameters*
+<pre><code>modparam("dispatcher", "db_url","postgres://username:password@localhost:port/dbname")
+modparam("dispatcher", "table_name", "dispatcher")
+modparam("dispatcher", "ds_ping_interval", 3)
+modparam("dispatcher", "ds_ping_latency_stats", 1)
+modparam("dispatcher", "ds_ping_method", "OPTIONS")
+modparam("dispatcher", "ds_probing_threshold", 3)
+modparam("dispatcher", "ds_inactive_threshold", 10)
+modparam("dispatcher", "ds_probing_mode", 1)
+modparam("dispatcher", "ds_ping_from", "sip:username@localhost")
+modparam("dispatcher", "ds_ping_reply_codes", "class=2;code=200")</code></pre>
 
 # Extra documentation:
 
