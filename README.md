@@ -7,8 +7,7 @@
 
 # Kamailio Document [5.3.x] | <a href="https://kamailio.org/docs/modules/5.3.x/">Documentation</a>
 
-# Módulos:
-
+- Este projeto, pretende listar os módulos utilizados em produção, juntamente com a documentação e como implementar.
 # [Postgres](https://www.kamailio.org/docs/modules/devel/modules/db_postgres.html#idm22)
 **Como implementar PostgreSQL:**
 
@@ -38,7 +37,7 @@ loadmodule "ndb_redis.so"
 modparam("ndb_redis", "server", "name=tcp;addr=localhost;port=port")
 #!endif</code></pre>
 
-- # [Auth](https://kamailio.org/docs/modules/5.3.x/modules/auth.html)
+# [Auth](https://kamailio.org/docs/modules/5.3.x/modules/auth.html)
 **Como implementar Auth(Back-end/Data-base):**
 
 *Definir no inicio*
@@ -59,7 +58,7 @@ modparam("auth_db", "load_credentials", "")
 modparam("auth_db", "use_domain", MULTIDOMAIN)
 !#endif</code></pre>
 
-- # [IPAuth](https://kamailio.org/docs/modules/5.3.x/modules/permissions.html)
+# [IPAuth](https://kamailio.org/docs/modules/5.3.x/modules/permissions.html)
 **Como implementar IPAuth:**
 
 *Definir no inicio*
@@ -81,7 +80,7 @@ modparam("permissions", "db_url", DBURL)
 modparam("permissions", "db_mode", 1)
 #!endif</code></pre>
 
-- # [Usrlocdb](https://kamailio.org/docs/modules/5.2.x/modules/usrloc.html#idm46)
+# [Usrlocdb](https://kamailio.org/docs/modules/5.2.x/modules/usrloc.html#idm46)
 **Como implementar Usrlocdb:**
 
 *Definir no inicio*
@@ -100,7 +99,7 @@ modparam("usrloc", "db_mode", 2)
 modparam("usrloc", "use_domain", MULTIDOMAIN)
 #!endif</code></pre>
 
-- # [SQLOps](https://kamailio.org/docs/modules/5.3.x/modules/sqlops.html#sqlops.p.sqlcon)
+# [SQLOps](https://kamailio.org/docs/modules/5.3.x/modules/sqlops.html#sqlops.p.sqlcon)
 **Como implementar SQLOps:**
 
 *Definir no inicio*
@@ -113,7 +112,7 @@ modparam("sqlops","sqlcon","alias=>postgres://username:password@localhost:port/d
 #!endif
 </code></pre>
 
-- # [Counters](https://kamailio.org/docs/modules/5.3.x/modules/counters.html)
+# [Counters](https://kamailio.org/docs/modules/5.3.x/modules/counters.html)
 **Como implementar Counters:**
 
 *Definir no inicio*
@@ -125,7 +124,7 @@ loadmodule "counters.so"
 modparam("counters", "script_counter", "execute example")
 #!endif</code></pre>
 
-- # [Statistics](https://kamailio.org/docs/modules/5.3.x/modules/statistics.html)
+# [Statistics](https://kamailio.org/docs/modules/5.3.x/modules/statistics.html)
 **Comom implmentar Statistics:**
 
 *Definir no inicio*
@@ -137,7 +136,7 @@ loadmodule "statistics.so"
 modparam("statistics", "variable", "name of statistic")
 #!endif</code></pre>
 
-- # [Uac(User Agent Client)](https://kamailio.org/docs/modules/5.3.x/modules/uac.html)
+# [Uac(User Agent Client)](https://kamailio.org/docs/modules/5.3.x/modules/uac.html)
 **Como implementar Uac:**
 
 *Definir no inicio*
@@ -151,7 +150,7 @@ modparam("uac", "reg_contact_addr", "localhost")
 modparam("uac","restore_mode","manual")
 #!endif</code></pre>
 
-- # [Cfgutils](https://kamailio.org/docs/modules/5.3.x/modules/cfgutils.html)
+# [Cfgutils](https://kamailio.org/docs/modules/5.3.x/modules/cfgutils.html)
 **Como implementar Cfgutils:**
 
 *Definir no inicio*
