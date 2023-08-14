@@ -126,7 +126,7 @@ modparam("counters", "script_counter", "execute example")
 #!endif</code></pre>
 
 # [Statistics](https://kamailio.org/docs/modules/5.3.x/modules/statistics.html)
-**Comom implmentar Statistics:**
+**Como implementar Statistics:**
 
 *Definir no inicio*
 <pre><code>#!define WITH_STATISTICS</code></pre>
