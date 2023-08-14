@@ -7,7 +7,8 @@
 
 # Kamailio Document [5.3.x] | <a href="https://kamailio.org/docs/modules/5.3.x/">Documentation</a>
 
-- Este projeto, pretende listar os mÛdulos utilizados em produÁ„o, juntamente com a documentaÁ„o e como implementar.
+- Este projeto tem como objetivo listar os m√≥dulos utilizados em produ√ß√£o, juntamente com a documenta√ß√£o e como implement√°-los.
+
 # [Postgres](https://www.kamailio.org/docs/modules/devel/modules/db_postgres.html#idm22)
 **Como implementar PostgreSQL:**
 
